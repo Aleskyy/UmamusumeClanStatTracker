@@ -264,7 +264,7 @@ def main(circle_id, download_dir="downloaded_files", webhook_url=None):
     if not os.path.exists(download_dir):
         os.makedirs(download_dir)
 
-    with SB(uc=True, headless=True) as sb:
+    with SB(uc=True, headless=False) as sb:
         sb.driver.execute_cdp_cmd("Page.setDownloadBehavior", {
             "behavior": "allow",
             "downloadPath": os.path.abspath(download_dir)

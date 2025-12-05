@@ -43,7 +43,7 @@ DISCORD_WEBHOOK_URL = "your_discord_webhook_url_here"
 
 Run the script:
 ```bash
-python ouaip.py
+python ChronoScraper.py
 ```
 
 The script will:
